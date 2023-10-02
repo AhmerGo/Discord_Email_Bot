@@ -51,12 +51,11 @@ async def fetch_emails(IMAP_SERVER, EMAIL, PASSWORD, CHANNEL_ID):
                 break  # Get only the first text/plain part
 
         short_description = body[:300] + '...' if len(body) > 300 else body
+        await channel.send("\n---------------------------------------------------------------------------------------------------------")
 
         # Create the formatted message
         formatted_message = f"{sender_name} <{sender_email}>\n{subject}\n{short_description}\n"
         await channel.send(formatted_message)
-        await channel.send("\n---------------------------------------------------------------------------------------------------------")
-
 
 
         
