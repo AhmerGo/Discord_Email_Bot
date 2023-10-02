@@ -1,5 +1,6 @@
 # Discord_Email_Bot
 Sample output: 
+
 ![image](https://github.com/AhmerGo/Discord_Email_Bot/assets/146684126/524ef3a1-8bdc-4320-856e-66d26cdb0834)
 
 
