@@ -90,7 +90,7 @@ async def fetch_emails(IMAP_SERVER, EMAIL, PASSWORD, CHANNEL_ID):
 async def on_ready():
     print(f'Logged in as {client.user.name}')
     # enable IMAP settings for all of the following emails 
-    while True:  # This loop makes the email checking run continuously
+    while True:  # This loop makes the email checking semi-continuous
         # IMAP SERVER_ADDRESS , email, app password or email password, channel id of the channel you want those emails fed into 
         await fetch_emails('imap.mail.yahoo.com','example@yahoo.com', 'REDACTED APP PASSWORD', 1158110758492704930) # yahoo uses app passwords
         await fetch_emails('outlook.office365.com','example@outlook.com', 'REDACTED EMAIL PASSWORD', 1158188122186731551) # outlook accounts can use 
