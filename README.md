@@ -1,4 +1,8 @@
 # Discord_Email_Bot
+Sample output: 
+![image](https://github.com/AhmerGo/Discord_Email_Bot/assets/146684126/524ef3a1-8bdc-4320-856e-66d26cdb0834)
+
+
 
 Email-to-Discord Forwarder
 This script fetches unread emails from specified email accounts and forwards them to a Discord channel. The fetched emails include the sender's name, their email address, the email subject, a short description of the email, and up to three images if present.
