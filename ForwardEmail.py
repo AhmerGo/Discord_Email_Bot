@@ -55,7 +55,8 @@ async def fetch_emails(IMAP_SERVER, EMAIL, PASSWORD, CHANNEL_ID):
         # Create the formatted message
         formatted_message = f"{sender_name} <{sender_email}>\n{subject}\n{short_description}\n"
         await channel.send(formatted_message)
-        await channel.send("\n")
+        await channel.send("\n---------------------------------------------------------------------------------------------------------")
+
         
         image_count = 0
         # If there are any images, send them as well
@@ -74,6 +75,9 @@ async def fetch_emails(IMAP_SERVER, EMAIL, PASSWORD, CHANNEL_ID):
                 image_count += 1
                 if image_count >= 3:  # Only take the first three images
                     break
+
+        await channel.send("---------------------------------------------------------------------------------------------------------\n")
+
 
 
         mail.store(email_id, '+FLAGS', '\\Seen')
