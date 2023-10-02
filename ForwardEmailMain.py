@@ -57,6 +57,8 @@ async def fetch_emails(IMAP_SERVER, EMAIL, PASSWORD, CHANNEL_ID):
         await channel.send(formatted_message)
         await channel.send("\n---------------------------------------------------------------------------------------------------------")
 
+
+
         
         image_count = 0
         # If there are any images, send them as well
@@ -90,9 +92,9 @@ async def on_ready():
     # enable IMAP settings for all of the following emails 
     while True:  # This loop makes the email checking run continuously
         # IMAP SERVER_ADDRESS , email, app password or email password, channel id of the channel you want those emails fed into 
-        await fetch_emails('imap.mail.yahoo.com','gondal.ahmer@yahoo.com', 'REDACTED APP PASSWORD', 1158110758492704930) # yahoo uses app passwords
-        await fetch_emails('outlook.office365.com','ahmergondal@outlook.com', 'REDACTED EMAIL PASSWORD', 1158188122186731551) # outlook accounts can use 
-        await fetch_emails('imap.gmail.com','thetruedemon4@gmail.com', 'REDACTED APP PASSWORD', 1158188178432340089) # app passwords
+        await fetch_emails('imap.mail.yahoo.com','example@yahoo.com', 'REDACTED APP PASSWORD', 1158110758492704930) # yahoo uses app passwords
+        await fetch_emails('outlook.office365.com','example@outlook.com', 'REDACTED EMAIL PASSWORD', 1158188122186731551) # outlook accounts can use 
+        await fetch_emails('imap.gmail.com','example@gmail.com', 'REDACTED APP PASSWORD', 1158188178432340089) # app passwords
         await asyncio.sleep(300)  # Wait for 5 minutes (300 seconds) before checking again
 
 client.run(TOKEN)
