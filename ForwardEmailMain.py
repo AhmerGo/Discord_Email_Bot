@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 
 # Discord bot token
-TOKEN = 'REDACTED'
+TOKEN = 'MTE1NTc0Mjg4NDk5NDI0MDU1Mg.G5k0xV.H7MPIW0gHS_EvYoTinjBksoR8PL9rRUEIQsOds'
 # Connect to Discord
 intents = discord.Intents.default()
 intents.messages = True
